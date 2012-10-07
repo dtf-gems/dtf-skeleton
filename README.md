@@ -11,15 +11,15 @@ DTF is designed in such a way that, with the master skeleton in place, one has o
 from any available DTF extension gem to add additional functionality. This can be anything ranging from
 additional languages such as Ruby, Python, C, C++, etc, to testing methods and methodologies.
 
-## DTF-Session Gem
+## DTF-SKELETON Gem
 
-  'dtf-session' gem is part of the DTF <dtf-gems.deryldoucette.com> framework, and is designed for
+  'stf-skeleton' gem is part of the DTF <dtf-gems.deryldoucette.com> framework, and is designed for
   Bash shell command-line based testing.
 
 ## Installation
-There are several ways to install, and configure the 'dtf-session' gem.
+There are several ways to install, and configure the 'stf-skeleton' gem.
 
-1) You would run ```gem install dtf-session```, and once installed, run ```rake dtf:install``` to
+1) You would run ```gem install stf-skeleton```, and once installed, run ```rake dtf:install``` to
 install the DTF baseline thor task(s).
 
 2) You would include the gem in your project's Gemfile and ```bundle install``. Once installed,
