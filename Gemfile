@@ -21,6 +21,7 @@ group :development, :test do
   gem "pry-theme"
   gem 'simplecov'
   gem 'database_cleaner'
+  gem 'rspec-formatter-webkit'
 end
 
 group :test do
