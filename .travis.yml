@@ -1,0 +1,24 @@
+language: ruby
+rvm:
+  - 1.9.3
+before_install:
+  - gem update bundler
+before_script:
+  - RAILS_ENV='development' bundle exec gem list
+  - RAILS_ENV='development' bundle exec rake dtf:install
+  - RAILS_ENV='development' bundle exec thor dtf_setup:install
+  - RAILS_ENV='development' bundle exec rake db:setup --trace
+  - RAILS_ENV='development' bundle exec rake db:test:prepare --trace
+script: RAILS_ENV='development' bundle exec rspec spec --profile
+after_script: RAILS_ENV='production' gem build dtf-skeleton.gemspec
+notifications:
+  irc:
+    channels:
+      - "irc.freenode.org#pgpkeys"
+    on_failure: always
+    on_success: always
+  email:
+    recipients:
+      - me@daviddwdowney.com
+    on_failure: always
+    on_success: always
