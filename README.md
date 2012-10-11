@@ -1,5 +1,17 @@
 # Dtf::Skeleton
 
+DTF NOTE: Be sure to search for, and _modify_ all occurances of 'dtf-skeleton' in the directory structure
+          to match the name you have selected for your gem. The specific files are as follows:
+
+- In db/config.yml, change the name of each of the db files.
+- In db/seeds.rb, see the warning line and follow its instructions.
+- In lib/, change the directory name from 'dtf-skeleton' to the name of your gem.
+- In lib/, rename dtf-skeleton.rb to match the name of your gem.
+- In spec/spec_helper.rb, change the dtf-skeleton require to require your gem.
+
+Follow the remaining instructions in this README.
+
+
 TODO: Write a gem description
 
 ## Installation
