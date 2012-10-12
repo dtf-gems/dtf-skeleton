@@ -8,6 +8,11 @@ DTF NOTE: Be sure to search for, and _modify_ all occurances of 'dtf-skeleton' i
 - In lib/, change the directory name from 'dtf-skeleton' to the name of your gem.
 - In lib/, rename dtf-skeleton.rb to match the name of your gem.
 - In spec/spec_helper.rb, change the dtf-skeleton require to require your gem.
+- In spec/, rename dtf-skeleton directory to the name of your gem.
+- In spec/dtf-skeleton/, rename dtf_skeleton_spec.rb to match the name of your gem.
+- In spec/dtf-skeleton/dtf_skeleton_spec.rb, rename all occurances of 'dtf-skeleton'
+  to match the name of your gem. Ignore case, being sure to look at Gem.loaded_specs line.
+
 
 Follow the remaining instructions in this README.
 
