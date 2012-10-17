@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/dtf-gems/dtf-skeleton.png)](https://travis-ci.org/dtf-gems/dtf-skeleton)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dtf-gems/dtf-skeleton)
+
 # Dtf::Skeleton
 
 DTF NOTE: Be sure to search for, and _modify_ all occurances of 'dtf-skeleton' in the directory structure
