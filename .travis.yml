@@ -1,20 +1,31 @@
 language: ruby
+branches:
+  only:
+    - master
+    - stable
 rvm:
+  - 1.9.2
   - 1.9.3
+matrix:
+  allow_failures:
+    - rvm: 1.9.2
+env:
+  global:
+    RAILS_ENV='test'
 before_install:
   - gem update bundler
+install:
+  - bundle install --without development
 before_script:
-  - RAILS_ENV='test' bundle exec gem list
-  - RAILS_ENV='test' bundle exec rake dtf:install
-  - RAILS_ENV='test' bundle exec thor dtf_setup:install
-  - RAILS_ENV='test' bundle exec rake db:setup --trace
-  - RAILS_ENV='test' bundle exec rake db:test:prepare --trace
-script: RAILS_ENV='test' bundle exec rspec spec --profile
-after_script: RAILS_ENV='production' gem build dtf-skeleton.gemspec
+  - bundle exec gem list
+  - bundle exec rake dtf:install
+  - bundle exec thor dtf_setup:install
+script: bundle exec rspec spec --profile
+after_script: RAILS_ENV='production' gem build dtf-session.gemspec
 notifications:
   irc:
     channels:
-      - "irc.freenode.org#pgpkeys"
+        - "irc.freenode.org#pgpkeys"
     on_failure: always
     on_success: always
   email:
