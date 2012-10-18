@@ -1,11 +1,8 @@
-# encoding: UTF-8
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in dtf.gemspec
-group :development, :test do
-  #gem "pry", :git => "https://github.com/pry/pry.git"
-  #gem "pry-doc", :git => "https://github.com/pry/pry-doc.git"
-  #gem "method_source", :git => "https://github.com/banister/method_source.git"
+# Specify your gem's dependencies in dtf-session.gemspec
+group :development do
+  gem 'debugger'
   gem 'pry'
   gem 'pry-doc'
   gem 'pry-debugger'
@@ -19,13 +16,17 @@ group :development, :test do
   gem "pry-exception_explorer"
   gem "jist"
   gem "pry-theme"
-  gem 'simplecov'
-  gem 'database_cleaner'
+  gem 'travis-lint'
   gem 'rspec-formatter-webkit'
 end
 
 group :test do
+  gem 'rspec'
+  gem 'rspec-given'
+  gem 'fabrication'
   gem 'cover_me'
+  gem 'database_cleaner'
+  gem 'simplecov'
 end
 
 gemspec
