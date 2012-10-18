@@ -21,7 +21,7 @@ before_script:
   - bundle exec rake dtf:install
   - bundle exec thor dtf_setup:install
 script: bundle exec rspec spec --profile
-after_script: RAILS_ENV='production' gem build dtf-session.gemspec
+after_script: RAILS_ENV='production' gem build dtf-skeleton.gemspec
 notifications:
   irc:
     channels:
