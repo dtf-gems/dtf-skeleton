@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Dtf::Skeleton::VERSION
   gem.authors       = ["David Deryl Downey"]
   gem.email         = ["me@daviddwdowney.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Replace with a generic gem description}
+  gem.summary       = %q{Replace with a full gem summary}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
