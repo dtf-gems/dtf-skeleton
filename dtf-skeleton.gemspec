@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["me@daviddwdowney.com"]
   gem.description   = %q{Replace with a generic gem description}
   gem.summary       = %q{Replace with a full gem summary}
-  gem.homepage      = ""
+  gem.homepage      = "https://dtf-gems.daviddwdowney.com/dtf-skeleton"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
