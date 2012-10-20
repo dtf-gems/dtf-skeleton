@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/dtf-gems/dtf-skeleton.png)](https://travis-ci.org/dtf-gems/dtf-skeleton)
+[![Build Status](https://travis-ci.org/dtf-gems/dtf-skeleton.png?branch=master,stable)](https://travis-ci.org/dtf-gems/dtf-skeleton)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/dtf-gems/dtf-skeleton)
 
 # Dtf::Skeleton
