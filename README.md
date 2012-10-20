@@ -13,7 +13,7 @@ additional languages such as Ruby, Python, C, C++, etc, to testing methods and m
 
 ## DTF-SKELETON Gem
 
-  'stf-skeleton' gem is part of the DTF <dtf-gems.deryldoucette.com> framework, and is designed for
+  'stf-skeleton' gem is part of the DTF <dtf-gems.daviddwdowney.com> framework, and is designed for
   Bash shell command-line based testing.
 
 ## Installation
